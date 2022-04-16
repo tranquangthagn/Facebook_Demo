@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    padding: 132px 0 112px;
+    justify-content: center;
+    background-color: #f0f2f3;
+}
+
+.content-left {
+    margin-left: -28px;
+    padding: 34px 70px 20px 0;
+}
+
+img {
+    width: 301px;
+    height: 106px;
+}
+
+.content-left .description {
+    width: 500px;
+    font-size: 28px;
+    color: #302f2f;
+    margin: 0 0 0 32px;
+}
+
+.content-right {
+    height: 456px;
+    width: 396px;
+}
+
+.list-items {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px 0 24px;
+}
+
+.form {
+    margin: 0;
+    padding: 0;
+}
+
+.form input {
+    width: 330px;
+    font-size: 17px;
+    padding: 15px 16px;
+    border-radius: 6px;
+    background: #ffffff;
+    border-color: #95a7a3;
+    border: 1px solid #dddfe2;
+}
+
+.form-group {
+    padding: 6px 16px 10px 16px;
+}
+
+.btn {
+    padding-top: 6px;
+    text-align: center;
+}
+
+input[value="Log in"] {
+    width: 332px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 16px;
+    line-height: 48px;
+    border-radius: 4px;
+    background-color: #1877f2;
+}
+
+.form-submit:hover {
+    background-color: #1162cc;
+}
+
+.recover-password {
+    cursor: pointer;
+    margin-top: 16px;
+    color: #1877f2;
+    text-align: center;
+}
+
+.recover-password a {
+    font-size: 16px;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.recover-password a:hover,
+.create-page a:hover {
+    text-decoration: underline;
+}
+
+.straight {
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid #d0cad1;
+}
+
+.register {
+    color: #fff;
+    width: 197px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 16px;
+    line-height: 48px;
+    border-radius: 4px;
+    background-color: #42b72a;
+}
+
+.register:hover {
+    background-color: #1d8a08;
+}
+
+.create-page {
+    font-size: 14px;
+    margin-top: 28px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.create-page a {
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer {
+    display: block;
+}
+
+.page-footer {
+    padding-top: 20px;
+}
+
+.social-language {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.language-items {
+    padding-left: 10px;
+}
+
+.item {
+    color: #8a8d91;
+    text-decoration: none;
+}
+
+.page-footer li:last-child {
+    padding-left: 10px;   
+}
+
+.page-footer .button {
+    height: 18px;
+    padding: 0 8px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 18px;
+    border: 1px solid;
+    font-weight: bold;
+    text-shadow: none;
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    background-color: #f5f6f7;
+    border-color: #ccd0d5;
+    vertical-align: middle;
+    box-sizing: content-box;
+    justify-content: center;
+}
+
+.button-plus {
+    width: 12px;
+    height: 12px;
+    background-position: -171px -272px;
+}
+
+.page-footer .button .img {
+    bottom: 2px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.sp_8s3dp67SKVi {
+    display: inline-block;
+    background-image: url(/rsrc.php/v3/yP/r/52vld7hrDEO.png);
+}
+
+.curve {
+    display: flex;
+    margin: 10px 224px 10px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #dddfe2;
+}
+
+.footer-chidren {
+    display: block;
+}
+
+.list-links {
+    margin: 0;
+    padding: 0 220px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.list-links a {
+    color: #8a8d91;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.copyright {
+    margin: 20px 0;
+    font-size: 12px;
+    padding: 0 220px;
+    color: #8a8d91;
+}
+
+.auth-form {
+    width: 432px;
+    height: 496px;
+    border-radius: 6px;
+
+    background-color: #fff;
+}
+
+.auth-form_header {
+    display: flex;
+    padding: 10px 16px;
+    justify-content: space-between;
+}
+
+.auth-form_heading {
+    margin: 0;
+    font-size: 32px;
+    line-height: 38px;
+    font-family: sans-serif;
+}
+
+.auth-form_heading-text {
+    margin: 0;
+    color:#606770;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: sans-serif;
+}
+
+.auth-form_header-right {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.auth-form_curve {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid #dddfe2;
+}
+
+.auth-form_wrap--form {
+    padding: 16px;
+}
+
+.auth-form_group {
+    display: block;
+}
+
+.auth-form_list--inputs {
+    display: flex;
+}
+
+.auth-form_input--name {
+    width: 173px;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 4px;
+    margin: 0 10px 10px 0;
+    border-style: double;
+    border-color: #c5c1c1;
+    border: 1px solid #cdc7c7;
+    background-color: #f6f6f7;
+}
+
+.auth-form_input {
+    width: 94.6%;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0 0 10px;
+    border-radius: 4px;
+    border-style: double;
+    border-color: #c5c1c1;
+    border: 1px solid #cdc7c7;
+    background-color: #f6f6f7;
+}
+
+.birthday-text,
+.gender-text {
+    font-size: 14px;
+    color: #585757;
+    margin: 2px 0 4px;
+    font-family: sans-serif;
+}
+
+.birthday-list--selects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthday-select {
+    width: 125px;
+    height: 36px;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 0 18px 0 4px;
+    border-color: #c5c1c1;
+}
+
+.auth-form_gender {
+    display: block;
+    margin-top: 10px;
+}
+
+.gender-group {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.list-genders {
+    width: 123px;
+    border-radius: 4px;
+    border: 1px solid #ccd0d5;
+}
+
+.label-item {
+    font-size: 17px;
+    line-height: 34px;
+    padding: 0 24px 0 10px;
+}
+
+.auth-form__policy-text {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #606770;
+    line-height: 16px;
+}
+
+.auth-form__policy--link {
+    color: #385898;
+    text-decoration: none;
+}
+
+.auth-form__policy--link:hover {
+    color: #385898;
+    text-decoration: underline;
+}   
+
+.auth-form__control {
+    text-align: center;
+}

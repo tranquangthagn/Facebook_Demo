@@ -1,6 +1,8 @@
 :root{
     --tinh: 8.3333%;
-    
+    --coating:rgba(11, 11, 11, 0.301);
+    --coating_hover:rgba(11, 11, 11, 0.481);
+    --bgcolor_hover:#f5f5f5;
 }
 
 
@@ -474,4 +476,399 @@ color: #616161;
 .news_messenger-icon:hover{
   background-color: #e5e5e5;
   transition: all .7s;
+}
+/* ----------------------PostStatus-effect------------- */
+
+.main-effect_PostStatus-effect{
+ 
+  width: 77.8%;
+  min-height: 100vh;
+  margin-left: 85px;
+  
+}
+/* ------------story---------------- */
+.main-effect_PostStatus-story{
+  margin-top: 29px;
+  height: 197px;
+  width: 100%;
+  margin-bottom: 25px;
+  
+}
+.main-effect_PostStatus-story-list{
+display: flex;
+text-decoration: none;
+list-style: none;
+height: 100%;
+width: 100%;
+position: relative;
+}
+
+.main-effect_PostStatus-story-item{
+height: 100%;
+width: 19%;
+background-color: #ffffff;
+border-radius: 12px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+}
+.story_margin-right{
+  margin-right: 8px;
+}
+.story_margin-left{
+float: right;
+}
+.main-effect_story-item-link{
+  height: 100%;
+  width: 19%;
+  text-decoration: none;
+  
+}
+.main-effect_story-item-img{
+position: relative;
+
+
+}
+.main-effect_story-item-img img{
+  width:  100%;
+  height: 148px;
+  object-fit: cover;
+  border-top-right-radius:12px ;
+  border-top-left-radius:12px ;
+  }
+
+.coating-img{
+    top: 0;
+    position: absolute;
+    width:  100%;
+    height: 148px;
+    background-image: linear-gradient(0deg,var(--coating),transparent);
+  }
+.main-effect_story-item-icon{
+  font-size: 32px;
+  border: solid 4px #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #097ceb;
+  position: absolute;
+  bottom: -16px;
+  left: 36px;
+}
+.main-effect_story-item-icon i{
+  font-size: 18px;
+  color: #ffffff;
+  position: absolute;
+  left: 7px;
+  top: 6.8px;
+
+  }
+
+.main-effect_story-item-title{
+  font-size: 12px;
+  color: #000;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-left: 33px;
+}
+
+.main-effect_story-user-img{
+  position: relative;
+}
+  .main-effect_story-user-img img{
+    position: absolute;
+    width:  100%;
+    height: 198px;
+    object-fit: cover;
+    border-radius: 12px;
+   
+  }
+
+.coating-img_user{
+    top: 0;
+    border-radius: 12px;
+    position: absolute;
+    width: 100%;
+    height: 198px;
+    background-image: linear-gradient(0deg,var(--coating),transparent);
+}
+.main-effect_story-main-user img{
+  border: solid 4px #097ceb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+.main-effect_story-user-name{
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 600;
+  position:absolute ;
+  top: 175px;
+  left: 10px;
+}
+.main-effect_PostStatus-story-item:hover .coating-img,
+.main-effect_PostStatus-story-item:hover .coating-img_user
+{
+  background-image: linear-gradient(0deg,var(--coating_hover),transparent);
+
+}
+.main-effect_PostStatus-story-item:hover .zoom-story {
+ transform: scale(1.03);
+}
+.zoom-story
+{
+  transition: all .4s;
+}
+.main-effect_PostStatus-story-item:hover .zoom-story-1 {
+  transform: scale(1.01);
+ }
+ .zoom-story-1
+ {
+   transition: all .4s;
+ }
+ .main-effect_story-extend{
+    position: absolute; 
+    right: -18px;
+    top: 79px; 
+   width: 40px;
+   height: 40px;
+   background-color: #ffffff;
+   border-radius: 50%;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+ }
+ .main-effect_story-extend i{
+   font-size: 16px;
+   color: #585858;
+   margin-left: 11px;
+   margin-top: 11px;
+
+ }
+ .main-effect_story-extend-name{
+   color: #ffffff;
+   background-color: rgba(0, 0, 0, 0.84);
+   padding: 8px 10px;
+   border-radius: 5px;
+   font-size: 12px;
+   position: absolute;
+   right: -41px;
+   top: 123px;
+   display: none;
+ }
+
+.main-effect_story-extend-link:hover .main-effect_story-extend{
+  background-color: rgb(234, 234, 234);
+}
+.main-effect_story-extend-link:hover .main-effect_story-extend-name{
+display: block;
+}
+.main-effect_PostStatus-push{
+ background-color: #ffffff;
+ width: 100%;
+ height: 123px; 
+ border-radius: 10px;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.main-effect_PostStatus-push-init{
+  height: 49%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-effect_PostStatus-push-init img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: solid 0.2px #898989;
+  margin-top: 2px;
+    margin-left: 17px;
+}
+.main-effect_PostStatus-push-input{
+  height: 40px;
+  width: 510px;
+  border-radius: 19px;
+  background-color: #f3f3f3;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.main-effect_PostStatus-push-input p{
+  font-size: 16px;
+  color: #6e6e6e;
+  line-height: 40px;
+  margin-left: 10px;
+}
+.line_PostStatus-innit{
+  height: .5px;
+width: 560px;
+margin-left: 16px;
+margin-bottom: 8px;
+}
+.main-effect_PostStatus-push-effect{
+display: flex;
+text-decoration: none;
+list-style: none;
+width: 560px;
+margin-left: 16px;
+
+}
+
+.main-effect_PostStatus-push-file{
+height: 40px;
+width:186.6667px ;
+
+border-radius: 8px;
+display: flex;
+align-items: center ;
+justify-content: center;
+
+}
+.main-effect_PostStatus-push-file i{
+font-size: 22px;
+margin-right: 10px;
+}
+.PostStatus-push-file_picture{
+  color: rgb(27, 202, 0);
+}
+.PostStatus-push-file_frend{
+  color: rgb(29, 112, 255);
+}
+.PostStatus-push-file_smile{
+  color: rgb(241, 185, 0);
+}
+
+.main-effect_PostStatus-push-file p{
+  font-size: 14px;
+font-weight: 600;
+color: #898989;
+}
+.main-effect_PostStatus-push-input:hover{
+  background-color: #e4e4e4;
+  cursor: pointer;
+}
+.main-effect_PostStatus-push-file:hover{
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+/* --------------------------create---------- */
+.main-effect_PostStatus-meetZomm{
+  height: 72px;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  border-radius: 10px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+
+}
+.main-effect_PostStatus-meetZomm-slice{
+  display: flex;
+height: 66px;
+/* background-color: #097ceb; */
+min-width: 100px;
+align-items: center;
+  transition: all 1s;
+}
+.main-effect_PostStatus-createMeet{
+  display: flex;
+  /* background-color: yellow; */
+  width: 195px;
+  height: 40px;
+  border-radius: 19px;
+  border: solid .5px #43b1ff65;
+  margin-left: 16px;
+
+}
+.main-effect_PostStatus-createMeet:hover{
+  background-color: rgba(138, 173, 210, 0.145);
+  cursor: pointer;
+}
+.main-effect_PostStatus-createMeet i{
+  font-size: 22px;
+  padding-left: 16px;
+  font-weight: bold;
+  background-image: linear-gradient(to right,rgb(0, 76, 255),rgb(233, 0, 245));
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 9px;
+  margin-left: -3px;
+}
+.main-effect_PostStatus-createMeet p{
+  font-size: 14px;
+  color: #097ceb;
+  line-height: 40px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+.PostStatus-createMeet-list{
+  width: 100px;
+  height: 100%;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.PostStatus-createMeet-user{
+  margin-left: 16px;
+  text-decoration: none;
+  list-style: none;
+}
+.PostStatus-createMeet-user:hover{
+  filter: brightness(95%);
+  cursor: pointer;
+}
+.PostStatus-createMeet-user img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+ 
+}.main-effect_PostStatus-meetZomm-next{
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  background-color: #ffffff;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.main-effect_PostStatus-meetZomm-next:hover{
+  background-color:var(--bgcolor_hover) ;
+  cursor: pointer;
+}
+.main-effect_PostStatus-meetZomm-next i{
+  font-size: 24px;
+  margin-top: 11px;
+    margin-left: 17px;
+  color: #6f6f6f;
+}
+.main-effect_PostStatus-meetZomm-back{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #ffffff;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+.main-effect_PostStatus-meetZomm-back:hover{
+  background-color:var(--bgcolor_hover) ;
+  cursor: pointer;
+}
+.main-effect_PostStatus-meetZomm-back i{
+  font-size: 24px;
+  margin-top: 11px;
+    margin-left: 17px;
+  color: #6f6f6f;
 }

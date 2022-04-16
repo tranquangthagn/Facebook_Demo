@@ -1,0 +1,26 @@
+{
+  "account": [
+    {
+      "id": 1,
+      "FirstName": " thang",
+      "SubName": "tran",
+      "email": "dongqua@gmail.com",
+      "passwork": "132456",
+      "day": "1",
+      "month": "may",
+      "year": "2022",
+      "gender": "Male"
+    },
+    {
+      "FirstName": "fsadf",
+      "SubName": "fsdaf",
+      "email": "vudoan@gmail.com",
+      "passwork": "123456",
+      "day": "1",
+      "month": "1",
+      "year": "2022",
+      "gender": "Female",
+      "id": 2
+    }
+  ]
+}
