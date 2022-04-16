@@ -88,7 +88,7 @@ function activeWeb(){
 
         }else{
        console.log("fdsfads");
-       window.location.replace("home.html")
+       window.location.replace("index.html")
         }
         })
        }
@@ -145,7 +145,7 @@ function activeWeb(){
              creatElement(formData,function(){
                  GetJsonOrigin()
                }) 
-               window.location.replace("./index.html")  
+               window.location.replace("index.html")  
                document.querySelector(".modal").style.display="none"    
                    
                }
