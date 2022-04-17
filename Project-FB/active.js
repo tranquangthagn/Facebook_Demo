@@ -79,6 +79,10 @@ window.onclick=(e1)=>{
     getIconmenu.classList.add("show-menu")
     getmenu.classList.add("colorDonwn")
    }
+   if (e1.target ==getChatInput) {
+    getIconChat.classList.add("show-chat")
+    getchatbox.classList.add("colorDonwn")
+   }
    if (e1.target !=getsearchinput) {
     outInputSearchw ()
    }
