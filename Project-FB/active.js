@@ -31,11 +31,7 @@ document.getElementById("Main-logo").style.opacity="1"
 }
 // --------------------search--------------
 
-window.onclick= function(e){
-    if (e.target!=getsearchinput && e.target!=getListSearch) {  
-    outInputSearchw()
-    }
-  }
+
 // ------------------------Down---------------------
 var getDown=document.querySelector(".Main-manage_accout-down i")
 
@@ -44,27 +40,54 @@ getDown.onclick=function(){
   getdetailDown.classList.toggle("showDown")
   getDown.classList.toggle("colorDonwn")
 }
-var layxuong=document.querySelector(".header")
+
+// var layxuong=document.querySelector(".header")
 
 var getdetaiBell=document.querySelector(".Main-manage_detail-bell")
 var getbell=document.querySelector(".Main-manage_accout-bell i")
+var getIconmenu=document.querySelector(".Main-manage_detail-menu")
+var getmenu=document.querySelector(".Main-manage_accout-menu i")
+getmenu.onclick=function(){
+  getIconmenu.classList.toggle("show-menu")
+  getmenu.classList.toggle("colorDonwn")
+
+}
+
 getbell.onclick=function(){
   getdetaiBell.classList.toggle("showBell")
- 
   getbell.classList.toggle("colorDonwn")
 }
-// layxuong.onclick= function(e1){
-//   if (e1.target!=getDown&& e1.target!=getbell) {  
-//     getdetailDown.classList.remove("showDown")
-//     getDown.classList.remove("colorDonwn")
-//     getbell.classList.remove("colorDonwn")
-//     getdetaiBell.classList.remove("showBell")
-    
-//   }else{
-//     getDown()
-//     getbell()
-//   }
-// }
+window.onclick=(e1)=>{
+  if (e1.target !=getbell) {
+    getdetaiBell.classList.remove("showBell")
+    getbell.classList.remove("colorDonwn")
+  } 
+  if (e1.target !=getmenu) {
+    getIconmenu.classList.remove("show-menu")
+    getmenu.classList.remove("colorDonwn")
+  }
+  
+  if (e1.target !=getDown) {
+    getdetailDown.classList.remove("showDown")
+    getDown.classList.remove("colorDonwn")
+  } 
+   if (e1.target !=getchatbox) {
+    getIconChat.classList.remove("show-chat")
+    getchatbox.classList.remove("colorDonwn")
+  }
+   if (e1.target ==menuSearc) {
+    getIconmenu.classList.add("show-menu")
+    getmenu.classList.add("colorDonwn")
+   }
+   if (e1.target !=getsearchinput) {
+    outInputSearchw ()
+   }
+
+
+}
+
+var menuSearc=document.querySelector(".menu-Searc_input")
+
 // ------------------chatsearch-------------
 var movetra2=document.querySelector(".tranfrom-chat2")
 var movetra=document.querySelector(".tranfrom-chat")
@@ -78,21 +101,9 @@ function inputchat(){
   document.querySelector(".chat-Search_icon-left").style.opacity="1"
 }
 // ---------------------displaychat---------
-var getchat=document.querySelector(".Main-manage_detail-chat")
-var getIconChat=document.querySelector(".Main-manage_accout-mess")
-getIconChat.onclick=function(){
-  getchat.classList.toggle("show-chat")
-  this.classList.toggle("colorDonwn")
-}
+
 var getChatInput=document.querySelector(".chat-Searc_input")
-getchat.onclick=function(echat){
-  if (echat.target!=getChatInput) {
-    movetra2.classList.remove("tranfrom-chat_move")
-    movetra.classList.remove("input-chat_move")
-    hidechat.classList.remove("hideicon");
-    document.querySelector(".chat-Search_icon-left").style.opacity="0"
-  }
-}
+
 // ----------------------searchmenu---------------------
 
 function searchMenu() {
@@ -115,11 +126,12 @@ function searchMenu() {
     }
   }
 }
-var getmenu=document.querySelector(".Main-manage_detail-menu")
 
-var getIconmenu=document.querySelector(".Main-manage_accout-menu")
-getIconmenu.onclick=function(){
-  getmenu.classList.toggle("show-menu")
-  this.classList.toggle("colorDonwn")
+var getIconChat=document.querySelector(".Main-manage_detail-chat")
+var getchatbox=document.querySelector(".Main-manage_accout-mess i")
 
+getchatbox.onclick=function(){
+  
+  getIconChat.classList.toggle("show-chat")
+  getchatbox.classList.toggle("colorDonwn")
 }

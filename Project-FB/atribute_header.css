@@ -384,7 +384,10 @@ border: solid 4px #fff;
 .Main-manage_accout-menu i{
     font-size: 18px;
     line-height: 40px;
-    padding-left: 10px;
+  
+    border-radius: 50%;
+
+padding: 10px;
 }
 .Main-manage_accout-mess i{
     font-size: 18px;
@@ -392,7 +395,7 @@ border: solid 4px #fff;
    padding-right: 10px;
     line-height: 40px;
     border-radius: 50%;
-    
+   
 
 }
 .Main-manage_accout-bell i{
@@ -407,7 +410,6 @@ border: solid 4px #fff;
     font-size: 18px;
     padding-left: 14px;
     padding-right: 14px;
-  
     line-height: 40px;
     border-radius: 50%;
 }
