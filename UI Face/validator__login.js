@@ -78,17 +78,19 @@ function activeWeb(){
             return element.email===emailAccount
 
         })
+       
         const getAsEmail1= json.some(element => {
           return element.passwork===passAccount
 
       })
        
-        if (getAsEmail1===false) {
-          alert("tài khoản không tồn tại")
+        if (getAsEmail1===true && getAsEmail!==undefined) {
+          
+          window.location.replace("home.html")
 
         }else{
-       console.log("fdsfads");
-       window.location.replace("home.html")
+          alert("tài khoản không tồn tại")
+    
         }
         })
        }
